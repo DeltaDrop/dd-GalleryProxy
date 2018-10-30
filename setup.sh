@@ -13,9 +13,10 @@ git clone https://github.com/DeltaDrop/dd-Gallery.git
 
 cd dd-Gallery
 npm install;
+printf "\nhi\n"
+npm run seed;
 npm run react;
 npm run server;
-# seed db # npm run seed
 cd ..
 
 # git clone https://github.com/DeltaDrop/dd-ProductInfo.git
