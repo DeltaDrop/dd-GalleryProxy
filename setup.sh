@@ -21,26 +21,29 @@ cd src/components
 # printf "\nhi\n"
 
 
-git clone https://github.com/DeltaDrop/dd-ProductInfo.git
+# /1, /2 for specific products
+# git clone https://github.com/DeltaDrop/dd-ProductInfo.git
 
-cd dd-ProductInfo
+# cd dd-ProductInfo
+# npm install
+# touch config.js
+# mysql --local-infile -u root < schema.sql
+# # npm run seed
+# npm run react-dev &
+# node server/index.js
+# cd ..
+
+
+git clone https://github.com/DeltaDrop/dd-ReviewsOfAProduct.git
+
+cd dd-ReviewsOfAProduct
 npm install
-touch config.js
-mysql --local-infile -u root < schema.sql
-# npm run seed
+npm run server-dev &
 npm run react-dev &
-node server/index.js
+# seed db - npm run seed
 cd ..
 
 printf "\nhi\n"
-
-# git clone https://github.com/DeltaDrop/dd-ReviewsOfAProduct.git
-
-# cd dd-ReviewsOfAProduct
-# npm install
-# node run server-dev
-# # seed db - npm run seed
-# cd ..
 
 # git clone https://github.com/DeltaDrop/dd-OverviewOfAProduct.git
 
