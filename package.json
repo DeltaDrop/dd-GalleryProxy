@@ -1,0 +1,24 @@
+{
+  "name": "dd-galleryproxy",
+  "version": "1.0.0",
+  "description": "a proxy server for testing delta drop",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeltaDrop/dd-GalleryProxy.git"
+  },
+  "author": "Ben Mangold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeltaDrop/dd-GalleryProxy/issues"
+  },
+  "homepage": "https://github.com/DeltaDrop/dd-GalleryProxy#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
