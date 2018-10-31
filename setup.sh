@@ -9,29 +9,23 @@ rm -r src/components
 mkdir src/components
 cd src/components
 
-# git clone https://github.com/DeltaDrop/dd-Gallery.git
-
-# cd dd-Gallery
-# npm install;
-# npm run seed; & 
-# npm run react; &
-# npm run server &
-# cd ..
-
-printf "\nhi\n"
-
+git clone https://github.com/DeltaDrop/dd-Gallery.git
+cd dd-Gallery
+npm install;
+npm run seed; 
+npm run react;
+npm run server &
+cd ..
 
 # /1, /2 for specific products
-# git clone https://github.com/DeltaDrop/dd-ProductInfo.git
-# cd dd-ProductInfo
-# npm install
-# touch config.js
-# mysql --local-infile -u root < schema.sql &
-# # npm run seed
-# npm run react-dev &
-# node server/index.js
-# cd ..
-
+git clone https://github.com/DeltaDrop/dd-ProductInfo.git
+cd dd-ProductInfo
+npm install
+touch config.js
+mysql --local-infile -u root < schema.sql &
+npm run react-dev &
+node server/index.js &
+cd ..
 
 git clone https://github.com/DeltaDrop/dd-ReviewsOfAProduct.git
 cd dd-ReviewsOfAProduct
@@ -41,14 +35,13 @@ npm run react-dev &
 # seed db - npm run seed
 cd ..
 
-printf "\nhi\n"
-
-# git clone https://github.com/DeltaDrop/dd-OverviewOfAProduct.git
-
-# cd dd-OverviewOfAProduct
-# npm install
-# node run server-dev
-# # seed db - npm run seed
-# cd ..
+git clone https://github.com/DeltaDrop/dd-OverviewOfAProduct.git
+cd dd-OverviewOfAProduct
+npm install
+npm run server-dev &
+npm run react-dev &
+npm run seed &
+# seed db - npm run seed
+cd ..
 
 # node server.js
