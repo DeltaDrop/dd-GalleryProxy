@@ -13,21 +13,20 @@ cd src/components
 
 # cd dd-Gallery
 # npm install;
-# npm run seed;
-# npm run react;
+# npm run seed; & 
+# npm run react; &
 # npm run server &
 # cd ..
 
-# printf "\nhi\n"
+printf "\nhi\n"
 
 
 # /1, /2 for specific products
 # git clone https://github.com/DeltaDrop/dd-ProductInfo.git
-
 # cd dd-ProductInfo
 # npm install
 # touch config.js
-# mysql --local-infile -u root < schema.sql
+# mysql --local-infile -u root < schema.sql &
 # # npm run seed
 # npm run react-dev &
 # node server/index.js
@@ -35,9 +34,8 @@ cd src/components
 
 
 git clone https://github.com/DeltaDrop/dd-ReviewsOfAProduct.git
-
 cd dd-ReviewsOfAProduct
-npm install
+npm install 
 npm run server-dev &
 npm run react-dev &
 # seed db - npm run seed
