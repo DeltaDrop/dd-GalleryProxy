@@ -9,26 +9,30 @@ rm -r src/components
 mkdir src/components
 cd src/components
 
-git clone https://github.com/DeltaDrop/dd-Gallery.git
+# git clone https://github.com/DeltaDrop/dd-Gallery.git
 
-cd dd-Gallery
-npm install;
-npm run seed;
-npm run react;
-npm run server &
+# cd dd-Gallery
+# npm install;
+# npm run seed;
+# npm run react;
+# npm run server &
+# cd ..
+
+# printf "\nhi\n"
+
+
+git clone https://github.com/DeltaDrop/dd-ProductInfo.git
+
+cd dd-ProductInfo
+npm install
+touch config.js
+mysql --local-infile -u root < schema.sql
+# npm run seed
+npm run react-dev &
+node server/index.js
 cd ..
 
 printf "\nhi\n"
-
-
-# git clone https://github.com/DeltaDrop/dd-ProductInfo.git
-
-# cd dd-ProductInfo
-# npm install
-# touch /db/config.js
-# npm start &
-# # seed db - npm run seed
-# cd ..
 
 # git clone https://github.com/DeltaDrop/dd-ReviewsOfAProduct.git
 
