@@ -46,4 +46,4 @@ cd ..
 
 cd ..
 
-node server.js
+nodemon server.js
